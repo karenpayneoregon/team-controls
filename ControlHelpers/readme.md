@@ -48,12 +48,12 @@ Various extensions and dialog wrappers
 | ButtonList  | &nbsp; | Get controls on form or child container as List of TextBox |
 | CheckBoxList  | &nbsp; | Get controls on form or child container as List of CheckedListBox |
 | ComboBoxList  | &nbsp; | Get controls  on form or child container as List of ComboBox |
-| GroupBoxList  | &nbsp; | Get controls of type &lt;T&gt; on form or child container as List of GroupBox |
+| GroupBoxList  | &nbsp; | Get controls  on form or child container as List of GroupBox |
 | ListViewViewList  | &nbsp; | Get controls on form or child container as List of ListViewView |
 | ListBoxList  | &nbsp; | Get controls  on form or child container as List of ListBox |
 | PanelList  | &nbsp; | Get controls  on form or child container as List of Panel |
 | TextBoxList  | &nbsp; | Get controls on form or child container as List of TextBox |
-| RadioButtonList  | &nbsp; | Get controls of type &lt;T&gt; on form orRadioButtonList child container as List of RadioButton |
+| RadioButtonList  | &nbsp; | Get controls  on form orRadioButtonList child container as List of RadioButton |
 | RadioButtonChecked  | &nbsp; | Checked Radio button in group |
 
 
