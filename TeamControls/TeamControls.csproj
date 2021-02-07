@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<PackageId>KP.TeamControls</PackageId>
+		<Authors>Karen Payne</Authors>
+		<Company>Karen</Company>
+		<Description>For a TechNet article</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>PackageImage.png</PackageIcon>
+		<RepositoryUrl>https://github.com/karenpayneoregon/team-controls</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="PresentationBuildTasks">
+			<HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="NoBeepTextBox.cs">
+	    <SubType>Component</SubType>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="assets\PackageImage.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
