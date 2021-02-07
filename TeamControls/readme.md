@@ -12,7 +12,7 @@ Useful controls to use in Windows Forms projects.
 - Control names can be changed to suit a developer needs and is encouraged.
 
 | Control  | &nbsp; | Description  |
-|:-------------|:---|
+|:-------------|--|:---|
 | CheckBoxCustom  | &nbsp; | Properties, Id property, Stash   |
 | DateTimePickerCustom | &nbsp; | Properties, Id property, Stash, set default format and size of the control.   |
 | IntegerTextBox  | &nbsp; | Properties, Id property, Stash, simple text box to allow only integer values   |
