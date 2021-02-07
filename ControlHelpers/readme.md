@@ -57,6 +57,13 @@ Various extensions and dialog wrappers
 | RadioButtonChecked  | &nbsp; | Checked Radio button in group |
 
 
+### Image converter helpers
+
+| Extension  | &nbsp; | Description  |
+|:-------------|--|:---|
+| ByteArrayFromImageToImage  | &nbsp; | Convert byte array from Image column to Image |
+| ByteArrayFromVarBinaryToImage  | &nbsp; | Convert byte array from varbinary(max) to Image |
+
 ### MessageBox wrappers
 
 | Extension  | &nbsp; | Description  |
