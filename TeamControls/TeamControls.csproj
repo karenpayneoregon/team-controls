@@ -11,6 +11,8 @@
 		<PackageIcon>PackageImage.png</PackageIcon>
 		<RepositoryUrl>https://github.com/karenpayneoregon/team-controls</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/karenpayneoregon/team-controls/tree/master/TeamControls</PackageProjectUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
 
 	<ItemGroup>
