@@ -5,5 +5,8 @@
 		<TargetFramework>net5.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
 	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\TeamControls\TeamControls.csproj" />
+	</ItemGroup>
 
 </Project>

@@ -57,6 +57,20 @@ Various extensions and dialog wrappers
 | RadioButtonChecked  | &nbsp; | Checked Radio button in group |
 
 
+### Array Helpers
+
+| Method  | &nbsp; | Description  |
+|:-------------|--|:---|
+| ConcatArrays&lt;TArray&gt;  | &nbsp; | generic method for concatenating arrays |
+
+
+### File Helpers
+
+| Method  | &nbsp; | Description  |
+|:-------------|--|:---|
+| ChunkLines  | &nbsp; | Chunk/split file into an array of lines specified by |
+
+
 ### Image converter helpers
 
 | Extension  | &nbsp; | Description  |

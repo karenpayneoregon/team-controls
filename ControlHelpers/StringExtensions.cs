@@ -74,6 +74,36 @@ namespace TeamHelpers
         /// <param name="pLastDelimiter">Token used for final delimiter</param>
         /// <returns>Delimited string</returns>
         public static string JoinWithLastSeparator(this string[] sender, string pDelimiter, string pLastDelimiter) => string.Join(pDelimiter + " ", sender.Take(sender.Length - 1)) + ((((sender.Length <= 1) ? "" : pLastDelimiter)) + sender.LastOrDefault());
+
+        /// <summary>
+        /// Truncates a string to the specified length.
+        /// </summary>
+        /// <param name="value">The string to be truncated.</param>
+        /// <param name="length">The maximum length.</param>
+        /// <param name="ellipsis"><c>true</c> to add ellipsis to the truncated text; otherwise, <c>false</c>.</param>
+        /// <returns>Truncated string.</returns>
+        /// <remarks>
+        /// https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit/Extensions/StringExtensions.cs#L157
+        /// </remarks>
+        public static string Truncate(this string? value, int length, bool ellipsis)
+        {
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                value = value!.Trim();
+
+                if (value.Length > length)
+                {
+                    if (ellipsis)
+                    {
+                        return value.Substring(0, length) + "...";
+                    }
+
+                    return value.Substring(0, length);
+                }
+            }
+
+            return value ?? string.Empty;
+        }
     }
 }
 
