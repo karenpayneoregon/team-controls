@@ -2,6 +2,10 @@
 
 namespace TeamHelpers
 {
+    /// <summary>
+    /// Wrappers for MessageBox, see also
+    /// https://github.com/karenpayneoregon/task-dialog-csharp
+    /// </summary>
     public static class Dialogs
     {
         /// <summary>
