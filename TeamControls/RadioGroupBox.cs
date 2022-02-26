@@ -39,7 +39,7 @@ namespace TeamControls
             set
             {
 
-                var radioButton = this.Controls.OfType<RadioButtonCustom>()
+                var radioButton = Controls.OfType<RadioButtonCustom>()
                     .FirstOrDefault(radio => radio.HasId);
 
                 if (radioButton == null) return;

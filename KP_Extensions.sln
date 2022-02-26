@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestControls", "TestControl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specific", "Specific", "{F61D9BE3-2641-45E7-B7E2-D218FD6729EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationLibrary", "ReservationLibrary\ReservationLibrary.csproj", "{2E075DE6-249B-49FF-9CF2-7937F3381480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReservationLibrary", "ReservationLibrary\ReservationLibrary.csproj", "{2E075DE6-249B-49FF-9CF2-7937F3381480}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
