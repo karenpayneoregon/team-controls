@@ -13,6 +13,15 @@ namespace TeamControls
     /// </summary>
     public class CurrencyFormattedLabel : Label
     {
+
+        [Category("Behavior"), Description("Identifier")]
+        public int Id { get; set; }
+        [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        public bool HasId => Id > -1;
+
+        [Category("Behavior"), Description("Stash")]
+        public string Stash { get; set; }
+
         public CurrencyFormattedLabel()
         {
             DoubleFormat = "c";

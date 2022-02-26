@@ -12,6 +12,14 @@ namespace TeamControls
     [DefaultBindingProperty("Selected")]
     public class RadioGroupBox : GroupBox
     {
+        [Category("Behavior"), Description("Identifier")]
+        public int Id { get; set; }
+        [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        public bool HasId => Id > -1;
+
+        [Category("Behavior"), Description("Stash")]
+        public string Stash { get; set; }
+
         [Description("Occurs when the selected value changes.")]
         public event SelectedChangedEventHandler SelectedChanged;
 

@@ -5,6 +5,14 @@ namespace TeamControls
 {
     public class TextBoxUpDown : TextBox
     {
+        [Category("Behavior"), Description("Identifier")]
+        public int Id { get; set; }
+        [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
+        public bool HasId => Id > -1;
+
+        [Category("Behavior"), Description("Stash")]
+        public string Stash { get; set; }
+
         public TextBoxUpDown()
         {
             Text = "0";

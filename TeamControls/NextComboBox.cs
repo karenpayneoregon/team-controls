@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace TeamControls
 {
-    public class NextTextBox : TextBox
+    public class NextComboBox : ComboBox
     {
 
         [Category("Behavior"), Description("Identifier")]
@@ -23,7 +17,7 @@ namespace TeamControls
         [Category("Behavior"), Description("When set to true move to next control")]
         public bool NextControlOnEnter { get; set; } = true;
 
-        
+
         public delegate void TriggerDelegate();
         /// <summary>
         /// Subscribe to be notified when ENTER was pressed.
@@ -37,12 +31,12 @@ namespace TeamControls
                 e.SuppressKeyPress = true;
 
                 TriggerEvent?.Invoke();
-                
+
                 if (NextControlOnEnter)
                 {
                     SendKeys.Send("{TAB}");
                 }
-                
+
                 return;
             }
 
