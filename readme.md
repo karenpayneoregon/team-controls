@@ -16,6 +16,14 @@ Each control has the following properties
 
 You can of course remove these properties or change them, for instance rather than Stash as a string the property could be a type such as a class.
 
+# Related
 
-![net](assets/Versions.png)
+[.NET Core 5 TaskDialog](https://github.com/karenpayneoregon/task-dialog-csharp) which has examples for creating custom MessageBoxes such as
 
+![img](assets/Example6.png)
+
+![img](assets/Example16.png)
+
+# Also included
+
+![image](assets/helpers.png)
