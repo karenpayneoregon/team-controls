@@ -38,6 +38,8 @@ namespace TestControls
             this.IncrementButton = new System.Windows.Forms.Button();
             this.DecrementButton = new System.Windows.Forms.Button();
             this.ValueButton = new System.Windows.Forms.Button();
+            this.bindingNavigatorCore1 = new TeamControls.Components.BindingNavigatorCore();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorCore1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -83,9 +85,11 @@ namespace TestControls
             // 
             // textBoxUpDown1
             // 
+            this.textBoxUpDown1.Id = 0;
             this.textBoxUpDown1.Location = new System.Drawing.Point(47, 161);
             this.textBoxUpDown1.Name = "textBoxUpDown1";
             this.textBoxUpDown1.Size = new System.Drawing.Size(100, 23);
+            this.textBoxUpDown1.Stash = null;
             this.textBoxUpDown1.TabIndex = 5;
             this.textBoxUpDown1.Text = "0";
             // 
@@ -119,11 +123,20 @@ namespace TestControls
             this.ValueButton.UseVisualStyleBackColor = true;
             this.ValueButton.Click += new System.EventHandler(this.ValueButton_Click);
             // 
+            // bindingNavigatorCore1
+            // 
+            this.bindingNavigatorCore1.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigatorCore1.Name = "bindingNavigatorCore1";
+            this.bindingNavigatorCore1.Size = new System.Drawing.Size(608, 25);
+            this.bindingNavigatorCore1.TabIndex = 9;
+            this.bindingNavigatorCore1.Text = "bindingNavigatorCore1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 285);
+            this.Controls.Add(this.bindingNavigatorCore1);
             this.Controls.Add(this.ValueButton);
             this.Controls.Add(this.DecrementButton);
             this.Controls.Add(this.IncrementButton);
@@ -135,6 +148,7 @@ namespace TestControls
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorCore1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +164,7 @@ namespace TestControls
         private System.Windows.Forms.Button IncrementButton;
         private System.Windows.Forms.Button DecrementButton;
         private System.Windows.Forms.Button ValueButton;
+        private TeamControls.Components.BindingNavigatorCore bindingNavigatorCore1;
     }
 }
 

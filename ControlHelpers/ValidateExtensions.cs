@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 
 namespace TeamHelpers
 {
@@ -16,7 +17,9 @@ namespace TeamHelpers
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static bool IsValidSsnWithoutDashes(this string value) => Regex.IsMatch(value.CleanSsn(), @"^(?!\b(\d)\1+\b)(?!123456789|219099999|078051120)(?!666|000|9\d{2})\d{3}(?!00)\d{2}(?!0{4})\d{4}$");
+        public static bool IsValidSsnWithoutDashes(this string value) 
+            => Regex.IsMatch(value.CleanSsn(), 
+                @"^(?!\b(\d)\1+\b)(?!123456789|219099999|078051120)(?!666|000|9\d{2})\d{3}(?!00)\d{2}(?!0{4})\d{4}$");
 
         /// <summary>
         /// Simple validate 9 digits
@@ -30,10 +33,16 @@ namespace TeamHelpers
             return matcher.Success;
         }
         /// <summary>
-        /// Remove hyphens from strin
+        /// Remove hyphens from string
         /// </summary>
         /// <param name="ssn"></param>
         /// <returns></returns>
         public static string CleanSsn(this string ssn) => ssn.Replace("-", "");
+
+        public static bool IsNull(this object sender)
+        {
+            return sender == null || sender == DBNull.Value || Convert.IsDBNull(sender) == true;
+        }
+
     }
 }
