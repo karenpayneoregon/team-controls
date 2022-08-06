@@ -36,4 +36,8 @@
 	    <PackagePath></PackagePath>
 	  </None>
 	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ControlHelpers\TeamHelpers.csproj" />
+	</ItemGroup>
 </Project>

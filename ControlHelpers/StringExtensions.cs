@@ -34,7 +34,8 @@ namespace TeamHelpers
         /// </summary>
         /// <param name="sender"></param>
         /// <returns></returns>
-        public static string SplitCamelCase(this string sender) => Regex.Replace(Regex.Replace(sender, "(\\P{Ll})(\\P{Ll}\\p{Ll})", "$1 $2"), "(\\p{Ll})(\\P{Ll})", "$1 $2");
+        public static string SplitCamelCase(this string sender) 
+            => Regex.Replace(Regex.Replace(sender, "(\\P{Ll})(\\P{Ll}\\p{Ll})", "$1 $2"), "(\\p{Ll})(\\P{Ll})", "$1 $2");
         /// <summary>
         /// Get int from string where there may be alpha characters
         /// </summary>
@@ -85,7 +86,7 @@ namespace TeamHelpers
         /// <remarks>
         /// https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit/Extensions/StringExtensions.cs#L157
         /// </remarks>
-        public static string Truncate(this string? value, int length, bool ellipsis)
+        public static string Truncate(this string value, int length, bool ellipsis)
         {
             if (!string.IsNullOrWhiteSpace(value))
             {
